@@ -1,10 +1,10 @@
-# SparkyFi
+# SparkyFi - AI Financial Advisor
 
 > Submitted as the runnable baseline for the CSE598 Capstone Project Proposal.
 
 SparkyFi is an AI-powered financial advisor that makes financial products accessible to everyone, students, gig workers, and underserved communities. Powered by Sparky, ASU's mascot, it combines real-time financial analysis with a CFPB knowledge base to deliver personalized, actionable financial guidance.
 
-- **Live demo:** https://sparkyfi.vercel.app/
+- **Live Website Link :** https://sparkyfi.vercel.app/
 - **Repository:** https://github.com/sreeram2001/CSE598-Agentic-AI-Project-Proposal
 
 ---
@@ -15,13 +15,13 @@ Millions of Americans lack access to financial advisors. They sign leases withou
 
 ## The Solution
 
-SparkyFi gives everyone a financial advisor in their pocket:
+SparkyFi, an AI Financial Advisor Tool gives everyone a financial advisor in their pocket:
 
-- **Talk to Sparky** — voice or text, get instant personalized financial advice
-- **Upload any document** — lease, insurance policy, bank statement, loan agreement - get plain-english analysis with red flags and action items
-- **Live financial dashboard** — risk score, spending breakdown, emergency alerts, savings opportunities
-- **Insurance Intelligence** — RAG-powered recommendations grounded in State Farm product data
-- **Connect your bank** — Plaid sandbox integration for real transaction data
+- **Talk to Sparky** : voice or text, get instant personalized financial advice
+- **Upload any document** : Lease, Insurance policy, Bank statement, credit card statement loan agreement - get simple analysis with red flags, green flags and action items
+- **Live financial dashboard** : risk score, spending breakdown, emergency alerts, savings opportunities
+- **Insurance Intelligence** : RAG-powered recommendations grounded in CFPB data and State Farm product data
+- **Connect your bank** : Plaid sandbox integration for real transaction data
 
 ---
 
@@ -91,7 +91,7 @@ cp .env.template .env.local
 npm run dev
 ```
 
-Open http://localhost:3000. The dashboard loads immediately with sample data (`lib/mockData.ts`), and the chat panel is ready to use.
+Open http://localhost:3000. The dashboard loads and the chat panel is ready to use.
 
 ---
 
