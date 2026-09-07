@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  color: white;
+}
+
+/* ── Premium background ── */
+.app-bg {
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(99, 102, 241, 0.35) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 10%, rgba(14, 165, 233, 0.25) 0%, transparent 45%),
+    radial-gradient(ellipse at 60% 80%, rgba(168, 85, 247, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 10% 80%, rgba(255, 198, 39, 0.12) 0%, transparent 40%),
+    linear-gradient(135deg, #04040f 0%, #080818 50%, #04040f 100%);
+  min-height: 100vh;
+}
+
+/* ── Glass cards ── */
+.glass {
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.glass:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.glass-nav {
+  background: rgba(4, 4, 15, 0.6);
+  backdrop-filter: blur(32px) saturate(200%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: rgba(99, 102, 241, 0.6);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.glass-btn-primary {
+  background: linear-gradient(135deg, #6366f1, #0ea5e9);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.glass-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.5);
+}
+
+.glass-btn-primary:active {
+  transform: translateY(0);
+}
+
+.glass-btn-ghost {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.glass-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Chat bubbles ── */
+.chat-bubble-user {
+  background: linear-gradient(135deg, #6366f1, #0ea5e9);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+  color: white;
+}
+
+.chat-bubble-agent {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* ── Alerts ── */
+.emergency-alert {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+/* ── Mic active ── */
+.mic-active {
+  background: linear-gradient(135deg, #6366f1, #0ea5e9) !important;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.25), 0 4px 20px rgba(99, 102, 241, 0.4) !important;
+}
+
+/* ── Transaction row ── */
+.transaction-row:hover {
+  background: rgba(99, 102, 241, 0.07);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Font sizes ── */
+.text-xs {
+  font-size: 0.82rem !important;
+}
+
+.text-sm {
+  font-size: 0.95rem !important;
+}
+
+.text-base {
+  font-size: 1.05rem !important;
+}
+
+.text-lg {
+  font-size: 1.25rem !important;
+}
+
+.text-xl {
+  font-size: 1.4rem !important;
+}
+
+.text-2xl {
+  font-size: 1.6rem !important;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.28);
+}
